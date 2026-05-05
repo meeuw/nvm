@@ -1,8 +1,6 @@
 name: 'Tests: nvm install with set -e'
 
 on:
-  pull_request:
-  push:
   workflow_dispatch:
     inputs:
       ref:

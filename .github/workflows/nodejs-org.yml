@@ -1,15 +1,16 @@
 name: 'Update nodejs.org'
 
-on:
-  push:
-    tags:
-      - 'v*'
-  workflow_dispatch:
-    inputs:
-      version:
-        description: 'nvm version tag (e.g., v0.40.4). Defaults to latest release.'
-        required: false
-        default: ''
+on: [workflow_dispatch]
+#on:
+#  push:
+#    tags:
+#      - 'v*'
+#  workflow_dispatch:
+#    inputs:
+#      version:
+#        description: 'nvm version tag (e.g., v0.40.4). Defaults to latest release.'
+#        required: false
+#        default: ''
 
 permissions:
   contents: read

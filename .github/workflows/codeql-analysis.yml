@@ -1,10 +1,12 @@
 name: "Code scanning - action"
 
-on:
-  push:
-  pull_request:
-  schedule:
-    - cron: '0 17 * * 4'
+on: [workflow_dispatch]
+#on:
+#  workflow_dispatch:
+#  push:
+#  pull_request:
+#  schedule:
+#    - cron: '0 17 * * 4'
 
 permissions:
   contents: read
